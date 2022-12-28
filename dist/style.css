@@ -82,6 +82,20 @@ All those helpful files must be present in the main scss file
   box-sizing: inherit;
 }
 
+/* COLORS: */
+/* :root {
+	--clr-light-green: #7ed56f;
+	--clr-medium-green: #55c57a;
+	--clr-dark-green: #28b485;
+} */
+html {
+  font-size: 62.5%; /* 10 / 16 = 0.625 */
+}
+
+body {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -178,8 +192,9 @@ body {
           animation-fill-mode: backwards;
 }
 
-/* at any given point the view height will be 95% of the total 
-viewport available
+/* 
+	at any given point the view height will be 95% of the total 
+	viewport available
 */
 .header {
   height: 95vh;
@@ -205,19 +220,4 @@ viewport available
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-/* COLORS: */
-/* :root {
-	--clr-light-green: #7ed56f;
-	--clr-medium-green: #55c57a;
-	--clr-dark-green: #28b485;
-} */
-html {
-  /* this defines what 1rem means in our context */
-  font-size: 62.5%; /* 10 / 16 = 0.625 */
-}
-
-body {
-  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

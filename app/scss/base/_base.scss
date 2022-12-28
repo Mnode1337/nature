@@ -5,3 +5,18 @@
 	padding: 0;
 	box-sizing: inherit;
 }
+
+/* COLORS: */
+/* :root {
+	--clr-light-green: #7ed56f;
+	--clr-medium-green: #55c57a;
+	--clr-dark-green: #28b485;
+} */
+
+html {
+	font-size: 62.5%; /* 10 / 16 = 0.625 */
+}
+
+body {
+	box-sizing: border-box;
+}

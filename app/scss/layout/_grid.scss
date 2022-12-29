@@ -1,0 +1,36 @@
+@use '../abstracts/mixins';
+@use '../abstracts/variables' as v;
+
+.row {
+	// in our context 10px = 1rem
+	// 1140px/10 = 114rem
+	max-width: v.$grid-width;
+	background-color: #eee;
+	margin: 0 auto;
+
+	//everything except the last-child row
+	&:not(:last-child) {
+		margin-bottom: v.$gutter-vertical;
+	} // .row:last-child
+
+	/* @include clearfix; */
+
+	[class^='col-'] {
+		//
+	}
+
+	.col-1-of-2 {
+		width: calc((100% - #{v.$gutter-horizontal}) / 2);
+		background-color: orangered;
+
+		float: left;
+
+		&:not(:last-child) {
+			margin-right: v.$gutter-horizontal;
+		}
+	}
+
+	.col-1-of-3 {
+		width: calc((100% - (2 * #{v.$gutter-horizontal})) / 3);
+	}
+}

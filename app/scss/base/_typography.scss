@@ -1,9 +1,11 @@
+@use '../abstracts/variables' as var;
+
 body {
-	font-family: $font, sans-serif;
+	font-family: var.$font, sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.7;
-	color: $color-grey-dark;
+	color: var.$color-grey-dark;
 	padding: 3rem; /* 10px / 30px */
 }
 

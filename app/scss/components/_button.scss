@@ -1,3 +1,4 @@
+@use '../abstracts/variables' as v;
 .btn {
 	&:link,
 	&:visited {
@@ -23,7 +24,7 @@
 
 	&--white {
 		background-color: #fff;
-		color: $color-grey-dark;
+		color: v.$color-grey-dark;
 	}
 
 	&::after {

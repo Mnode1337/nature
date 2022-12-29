@@ -1,4 +1,4 @@
-@use '../abstracts/mixins';
+@use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
 
 .row {
@@ -13,21 +13,20 @@
 		margin-bottom: v.$gutter-vertical;
 	} // .row:last-child
 
-	/* @include clearfix; */
+	@include m.clearfix;
 
+	// this will select all the col- at once
 	[class^='col-'] {
-		//
-	}
-
-	.col-1-of-2 {
-		width: calc((100% - #{v.$gutter-horizontal}) / 2);
-		background-color: orangered;
-
 		float: left;
 
 		&:not(:last-child) {
 			margin-right: v.$gutter-horizontal;
 		}
+	}
+
+	.col-1-of-2 {
+		width: calc((100% - #{v.$gutter-horizontal}) / 2);
+		background-color: orangered;
 	}
 
 	.col-1-of-3 {

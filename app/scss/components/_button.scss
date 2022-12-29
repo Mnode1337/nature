@@ -23,7 +23,7 @@
 	}
 
 	&--white {
-		background-color: #fff;
+		background-color: v.$color-white;
 		color: v.$color-grey-dark;
 	}
 
@@ -42,7 +42,7 @@
 	}
 
 	&--white::after {
-		background-color: #fff;
+		background-color: v.$color-white;
 	}
 
 	&:hover::after {

@@ -6,6 +6,7 @@ img in css should have the % measurement.
 ===============================================================
 
 r*
+clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
 box-shadow ppt
 
@@ -20,3 +21,8 @@ attribute selector: [selected_attribute]
 outline:
 
 outline-offset: 2rem;
+
+@container
+
+===============================================================
+

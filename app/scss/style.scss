@@ -3,12 +3,12 @@ we will import all the partial in our main scss file
 All those helpful files must be present in the main scss file
 */
 
-@import 'abstracts/index';
+@import 'abstracts';
 
-@import 'base/index';
+@import 'base';
 
-@import 'components/index';
+@import 'components';
 
-@import 'layout/index';
+@import 'layout';
 
-@import 'pages/index';
+@import 'pages';

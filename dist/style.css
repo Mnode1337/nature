@@ -310,6 +310,7 @@ body {
   transform: scale(0.95);
 }
 
+<<<<<<< Updated upstream
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
@@ -334,6 +335,8 @@ body {
   transform: translate(-1.5rem) scaleY(1.03);
 }
 
+=======
+>>>>>>> Stashed changes
 /* 
 	at any given point the view height will be 95% of the total 
 	viewport available

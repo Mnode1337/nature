@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
 we will import all the partial in our main scss file 
 All those helpful files must be present in the main scss file
@@ -268,6 +269,7 @@ body {
           animation: moveInBottom 0.5s ease-in-out 0.75s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+<<<<<<< HEAD
 }
 
 .btn-text:link, .btn-text:visited {
@@ -592,6 +594,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh;
+<<<<<<< HEAD
 }
 
 .section-features {
@@ -603,6 +606,7 @@ body {
 
 .section-features > * {
   transform: skewY(7deg);
+<<<<<<< HEAD
 }
 
 .section-tours {
@@ -610,3 +614,16 @@ body {
   padding: 25rem 0 15rem 0;
   margin-top: -20vh;
 }/*# sourceMappingURL=style.css.map */
+=======
+}/*# sourceMappingURL=style.css.map */
+=======
+}/*# sourceMappingURL=style.css.map */
+=======
+}/*# sourceMappingURL=style.css.map */
+=======
+/* @forward 'boilerplate'; */
+/* @forward 'typography'; *//*# sourceMappingURL=style.css.map */
+>>>>>>> updating the mani branch to feature1 sass installed
+>>>>>>> 58c59b0a5f17780f4c41f686ed338278f0d765fe
+>>>>>>> photo section completed
+>>>>>>> merging changesbranch n master branch

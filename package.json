@@ -1,5 +1,26 @@
 {
+<<<<<<< HEAD
   "devDependencies": {
     "node-sass": "^8.0.0"
   }
+=======
+	"name": "natours",
+	"version": "1.0.0",
+	"description": "Lading page for natours",
+	"main": "index.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Mnode1337/nature.git"
+	},
+	"author": "kehops",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Mnode1337/nature/issues"
+	},
+	"homepage": "https://github.com/Mnode1337/nature#readme",
+	"devDependencies": {
+		"node-sass": "^8.0.0"
+	}
+>>>>>>> updating the mani branch to feature1 sass installed
 }

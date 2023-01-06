@@ -1,0 +1,135 @@
+@use '../abstracts/variables' as v;
+
+.card {
+	/* FUNCTIONALITY */
+	perspective: 150rem;
+	-moz-perspective: 150rem;
+	position: relative;
+	height: 52rem;
+
+	&__side {
+		height: 52rem;
+		transition: all 0.8s ease;
+
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		border-radius: 3px;
+
+		overflow: hidden;
+		box-shadow: 0, 1.5rem, 4rem, rgba($color: v.$color-black, $alpha: 0.15);
+
+		&--front {
+			background-color: v.$color-white;
+		}
+
+		&--back {
+			transform: rotateY(180deg);
+			&-1 {
+				background-image: linear-gradient(
+					to right bottom,
+					v.$color-secondary-light,
+					v.$color-secondary-dark
+				);
+			}
+		}
+	}
+
+	/* On hover, transform the front side */
+	&:hover &__side--front {
+		// .card:hover .card__side
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side--back {
+		// .card:hover .card__side
+		transform: rotateY(0);
+	}
+
+	/* FRONT SIDE STYLING */
+	&__picture {
+		background-size: cover;
+		height: 23rem;
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+		background-blend-mode: screen;
+
+		&--1 {
+			// linear-gradient is defined as a background image
+			// since we have multiple backgrounds we would want to blend
+			// them
+			background-image: linear-gradient(
+					to right bottom,
+					v.$color-secondary-light,
+					v.$color-secondary-dark
+				),
+				url(../../../img/nat-5.jpg);
+		}
+
+		&--2 {
+			background-image: linear-gradient(
+					to right bottom,
+					v.$color-secondary-light,
+					v.$color-secondary-dark
+				),
+				url(../../../img/nat-5.jpg);
+		}
+
+		&--3 {
+			background-image: linear-gradient(
+					to right bottom,
+					v.$color-secondary-light,
+					v.$color-secondary-dark
+				),
+				url(../../../img/nat-5.jpg);
+		}
+	}
+
+	&__heading {
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: right;
+		color: v.$color-white;
+		position: absolute;
+		top: 12rem;
+		right: 2rem;
+		width: 75%;
+	}
+
+	/* this is not a child of the heading is a whole different and independant elt */
+
+	&__heading-span {
+		padding: 1rem 1.5rem;
+		box-decoration-break: clone;
+
+		&--1 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba(v.$color-secondary-light, 0.85),
+				rgba(v.$color-secondary-dark, 0.85)
+			);
+		}
+	}
+
+	&__details {
+		padding: 3rem;
+
+		ul {
+			margin: 0 auto;
+			list-style: none;
+			width: 80%;
+
+			li {
+				text-align: center;
+				font-size: 1.5rem;
+				padding: 1rem;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid v.$color-grey-light-2;
+				}
+			}
+		}
+	}
+}

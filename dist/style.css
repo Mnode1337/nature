@@ -100,7 +100,7 @@ body {
   text-align: center;
 }
 
-.u-mb-big {
+.u-mb-8 {
   margin-bottom: 8rem;
 }
 
@@ -110,6 +110,14 @@ body {
 
 .u-mb-sm {
   margin-bottom: 1.5rem;
+}
+
+.u-mt-8 {
+  margin-top: 8rem;
+}
+
+.u-mt-10 {
+  margin-top: 10rem;
 }
 
 body {
@@ -217,6 +225,19 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+.btn--green::after {
+  background-color: #55c57a;
 }
 
 .btn::after {
@@ -343,6 +364,7 @@ body {
   /* On hover, transform the front side */
   /* FRONT SIDE STYLING */
   /* this is not a child of the heading is a whole different and independant elt */
+  /* FRONT SIDE STYLING */
 }
 
 .card__side {
@@ -371,6 +393,14 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 
+.card__side--back-2 {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
@@ -385,6 +415,8 @@ body {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
           clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-blend-mode: screen;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .card__picture--1 {
@@ -392,11 +424,11 @@ body {
 }
 
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../../../img/nat-6.jpg);
 }
 
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../../../img/nat-7.jpg);
 }
 
 .card__heading {
@@ -439,6 +471,31 @@ body {
 
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
 
 /* 
@@ -550,6 +607,6 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -20vh;
 }/*# sourceMappingURL=style.css.map */

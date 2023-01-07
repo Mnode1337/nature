@@ -25,6 +25,19 @@
 	&--white {
 		background-color: v.$color-white;
 		color: v.$color-grey-dark;
+
+		&::after {
+			background-color: v.$color-white;
+		}
+	}
+
+	&--green {
+		background-color: v.$color-primary;
+		color: v.$color-white;
+
+		&::after {
+			background-color: v.$color-primary;
+		}
 	}
 
 	&::after {

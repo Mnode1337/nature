@@ -498,9 +498,6 @@ body {
   font-weight: 100;
 }
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 .story {
   width: 75%;
   margin: 0 auto;
@@ -524,15 +521,19 @@ body {
   width: 15rem;
   height: 15rem;
   float: left;
-  shape-outside: circle(45% at 45% 50%);
-  -webkit-clip-path: circle(45% at 50% 50%);
-          clip-path: circle(45% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
   transform: translateX(-3rem) skewX(12deg);
   position: relative;
 }
 
 .story__img {
   height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 0.5s;
 }
 
 .story__text {
@@ -543,23 +544,27 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, 20%);
   color: #fff;
   text-transform: uppercase;
   font-size: 1.7rem;
   text-align: center;
   opacity: 0;
   transition: all 0.5s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .story:hover .story__caption {
   opacity: 1;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
->>>>>>> Stashed changes
-=======
->>>>>>> e9f74ee1d7dbd6d61dbe72f4a024aa36c7aa0104
+.story:hover .story__img {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(80%);
+}
+
 /* 
 	at any given point the view height will be 95% of the total 
 	viewport available

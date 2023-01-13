@@ -6,6 +6,14 @@ img in css should have the % measurement.
 
 r\*
 
+html: figure figcaption
+
+backface-visibility property whn transform: translate()
+
+filter property
+
+filter: blur(3px)
+
 cool effects in CSS
 
 clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

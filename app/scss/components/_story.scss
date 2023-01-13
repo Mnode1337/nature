@@ -22,7 +22,6 @@
 		width: 15rem;
 		height: 15rem;
 		float: left;
-		background-color: orangered;
 
 		shape-outside: circle(50% at 50% 50%);
 
@@ -36,6 +35,9 @@
 	/* image is inside a shape that already has a width clearly defined */
 	&__img {
 		height: 100%;
+		transform: translateX(-4rem) scale(1.4);
+		backface-visibility: hidden;
+		transition: all 0.5s;
 	}
 
 	&__text {
@@ -46,18 +48,25 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, 0%);
+		transform: translate(-50%, 20%);
 		color: v.$color-white;
 		text-transform: uppercase;
 		font-size: 1.7rem;
 		text-align: center;
 		opacity: 0;
 		transition: all 0.5s;
+		backface-visibility: hidden;
 	}
 
 	/* as soon as the story is hover, we want to change the caption */
 	&:hover &__caption {
 		opacity: 1;
-		transform: translateY(-50%);
+		transform: translate(-50%, -50%);
+	}
+
+	&:hover &__img {
+		// we zoom out the image when we hover over the story image
+		transform: translateX(-4rem) scale(1);
+		filter: blur(3px) brightness(80%);
 	}
 }

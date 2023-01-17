@@ -6,7 +6,7 @@ img in css should have the % measurement.
 
 r\*
 
-html: figure figcaption
+html: figure and figcaption
 
 backface-visibility property whn transform: translate()
 
@@ -26,7 +26,7 @@ background-clip ppt
 
 translate: skew(number_in_degree deg)
 
-attribute selector: [selected_attribute]
+attribute selector: [selected_attribute] in which sass file?
 
 outline:
 
@@ -53,3 +53,15 @@ we will define our card has component
 we are not touch the colon grid in anyway... we just implement the .card in it
 
 Perspectives are first defined on the parent elt in CSS3
+
+++++++++++++++++++++++++++++++++++++++++++++
+
+solid-color gradient
+
+::input-placeholder pseudo-element
+
+form\_\_input:focus:invalid
+
+:focus, :invalid
+placeholder-shown
+:checked pseudo-class

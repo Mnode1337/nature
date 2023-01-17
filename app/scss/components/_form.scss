@@ -1,0 +1,59 @@
+@use '../abstracts/mixins' as m;
+@use '../abstracts/variables' as v;
+@use '../base/utilities';
+
+.form {
+	&__group:not(:last-child) {
+		//select everything except th last element
+		margin-bottom: u-mb-sb;
+	}
+
+	height: 100%;
+
+	/* @include m.form__input; */
+	&__input {
+		font-family: inherit;
+
+		font-size: 1.5rem;
+		color: inherit;
+		padding: 1.5rem 2rem;
+		border-radius: 2px;
+		background-color: rgba($color: v.$color-white, $alpha: 0.5);
+		border: none;
+
+		border-bottom: v.$b-r3 solid transparent;
+		width: 90%;
+		display: inline-block;
+
+		&::-webkit-input-placeholder {
+			color: v.$color-grey-dark-2;
+		}
+
+		&:focus {
+			outline: none;
+			// 1rem in the y direction, 2rem of blur, and the color palatte
+			box-shadow: 0 1rem 2rem rgba(v.$color-black, 0.1);
+			border-bottom: v.$b-r3 solid v.$color-primary;
+		}
+
+		&:focus:invalid {
+			border-bottom: v.$b-r3 solid v.$color-secondary-dark;
+		}
+	}
+
+	&__label {
+		font-size: 1.2rem;
+		font-weight: 700;
+		margin-left: 2rem;
+		margin-top: 0.7rem;
+		display: block;
+		transition: all 0.3s;
+	}
+	// + adjacent siblings selector
+	// ~ general sibling selector
+	&__input:placeholder-shown + &__label {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-4rem);
+	}
+}

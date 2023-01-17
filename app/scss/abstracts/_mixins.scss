@@ -1,7 +1,23 @@
+// GLOBAL MIXINS //
+@use '../abstracts/variables' as v;
+@use '../base/utilities' as u;
+
 @mixin clearfix {
 	&::after {
 		content: '';
 		display: table;
 		clear: both;
 	}
+}
+
+@mixin form__input() {
+	font-family: inherit;
+	font-size: 1.5rem;
+	padding: 1.5rem 2rem;
+	border-radius: v.$b-r3;
+	background-color: rgba($color: v.$color-white, $alpha: 0.5);
+	border: none;
+}
+
+@mixin form__label {
 }

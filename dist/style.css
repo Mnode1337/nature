@@ -2,6 +2,30 @@
 we will import all the partial in our main scss file 
 All those helpful files must be present in the main scss file
 */
+.u-center-text {
+  text-align: center;
+}
+
+.u-mb-8 {
+  margin-bottom: 8rem;
+}
+
+.u-mb-md {
+  margin-bottom: 4rem;
+}
+
+.u-mb-sm {
+  margin-bottom: 1.5rem;
+}
+
+.u-mt-8 {
+  margin-top: 8rem;
+}
+
+.u-mt-10 {
+  margin-top: 10rem;
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -15,6 +39,7 @@ All those helpful files must be present in the main scss file
     transform: translate(0);
   }
 }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -502,7 +527,7 @@ body {
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -565,6 +590,111 @@ body {
   filter: blur(3px) brightness(80%);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-mb-8 {
+  margin-bottom: 8rem;
+}
+
+.u-mb-md {
+  margin-bottom: 4rem;
+}
+
+.u-mb-sm {
+  margin-bottom: 1.5rem;
+}
+
+.u-mt-8 {
+  margin-top: 8rem;
+}
+
+.u-mt-10 {
+  margin-top: 10rem;
+}
+
+.form {
+  height: 100%;
+  /* @include m.form__input; */
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: u-mb-sb;
+}
+
+.form__input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: inline-block;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form__input:-moz-placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form__input:-ms-input-placeholder + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
 /* 
 	at any given point the view height will be 95% of the total 
 	viewport available
@@ -596,6 +726,30 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-mb-8 {
+  margin-bottom: 8rem;
+}
+
+.u-mb-md {
+  margin-bottom: 4rem;
+}
+
+.u-mb-sm {
+  margin-bottom: 1.5rem;
+}
+
+.u-mt-8 {
+  margin-top: 8rem;
+}
+
+.u-mt-10 {
+  margin-top: 10rem;
 }
 
 .row {
@@ -679,6 +833,24 @@ body {
 }
 
 .section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 50rem;
+}
+
+.book__form {
+  width: 50%;
+  padding: 6rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @use '../abstracts/variables' as v;
 .btn {
+	&,
 	&:link,
 	&:visited {
 		display: inline-block;
@@ -11,13 +12,20 @@
 		/* the reference for the pseudo-elt has to be the btn */
 		position: relative;
 		font-size: v.$default-font-size;
+
+		// Change fo the <button> elt
+
+		border: none;
+		cursor: pointer;
 	}
 
 	&:hover {
 		transform: translateY(-0.3rem);
 		box-shadow: 0 1rem 2rem rgba($color: v.$color-black, $alpha: 0.2);
 	}
-	&:active {
+	&:active,
+	&:focus {
+		outline: none;
 		transform: translateY(-0.1rem);
 		box-shadow: 0 0.5rem 1rem rgba($color: v.$color-black, $alpha: 0.2);
 	}

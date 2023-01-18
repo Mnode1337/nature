@@ -18,6 +18,14 @@ All those helpful files must be present in the main scss file
   margin-bottom: 1.5rem;
 }
 
+.u-mt-md {
+  margin-top: 4rem;
+}
+
+.u-mt-sm {
+  margin-top: 2rem;
+}
+
 .u-mt-8 {
   margin-top: 8rem;
 }
@@ -137,6 +145,14 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-mt-md {
+  margin-top: 4rem;
+}
+
+.u-mt-sm {
+  margin-top: 2rem;
+}
+
 .u-mt-8 {
   margin-top: 8rem;
 }
@@ -225,7 +241,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -235,6 +251,8 @@ body {
   /* the reference for the pseudo-elt has to be the btn */
   position: relative;
   font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -242,7 +260,8 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -624,6 +643,14 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-mt-md {
+  margin-top: 4rem;
+}
+
+.u-mt-sm {
+  margin-top: 2rem;
+}
+
 .u-mt-8 {
   margin-top: 8rem;
 }
@@ -652,6 +679,7 @@ body {
   border-bottom: 3px solid transparent;
   width: 90%;
   display: inline-block;
+  transition: all 0.3s;
 }
 
 .form__input::-webkit-input-placeholder {
@@ -693,6 +721,51 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-4rem);
+}
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.5rem;
+}
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -0.4rem;
+}
+
+.form__radio-button::after {
+  height: 1.3rem;
+  width: 1.3rem;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #55c57a;
+  opacity: 0;
+}
+
+.form__radio-input:checked + .form__radio-label .form__radio-button::after {
+  opacity: 1;
 }
 
 /* 
@@ -742,6 +815,14 @@ body {
 
 .u-mb-sm {
   margin-bottom: 1.5rem;
+}
+
+.u-mt-md {
+  margin-top: 4rem;
+}
+
+.u-mt-sm {
+  margin-top: 2rem;
 }
 
 .u-mt-8 {
